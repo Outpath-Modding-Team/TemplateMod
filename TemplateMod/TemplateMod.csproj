@@ -31,14 +31,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="0Harmony, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lib.Harmony.2.2.2\lib\net48\0Harmony.dll</HintPath>
+    </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\Outpath First Journey\Dependencies\Assembly-CSharp.dll</HintPath>
+      <HintPath>$(OUTPATH_REFERENCES)\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>..\..\..\Outpath First Journey\Dependencies\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>$(OUTPATH_REFERENCES)\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
-    <Reference Include="Outpath-Modding">
-      <HintPath>..\..\..\Outpath First Journey\Dependencies\Outpath-Modding.dll</HintPath>
+    <Reference Include="Outpath-Modding, Version=0.0.0.1, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\Outpath-Modding.0.0.0.1-alpha6\lib\net48\Outpath-Modding.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -55,6 +58,9 @@
     <Compile Include="EventHandlers.cs" />
     <Compile Include="Mod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
