@@ -1,5 +1,9 @@
-﻿using Outpath_Modding.Events.EventArguments;
+﻿using Outpath_Modding.API.Features;
+using Outpath_Modding.API.Features.Item;
+using Outpath_Modding.Events.EventArguments;
 using Outpath_Modding.GameConsole;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace TemplateMod
 {
@@ -28,6 +32,7 @@ namespace TemplateMod
         public void OnGameLoaded()
         {
             Logger.Debug("Game loaded!");
+            Mod.Instance.TestiumOre_Prefab.AddItemGroupToLoot(new List<ResourcePrefab.ItemChance>() { new ResourcePrefab.ItemChance() { Chance = 1, ItemInfo = CustomItemInfo.CustomItemInfos.First().Base } }, 1, 2, 1); // Adding loot to a previously created resource
         }
 
         public void OnMenuLoaded()

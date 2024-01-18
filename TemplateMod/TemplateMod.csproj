@@ -35,13 +35,13 @@
       <HintPath>..\packages\Lib.Harmony.2.2.2\lib\net48\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>$(OUTPATH_REFERENCES)\Assembly-CSharp.dll</HintPath>
+      <HintPath>$(Outpath_Dependencies)\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>$(OUTPATH_REFERENCES)\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>$(Outpath_Dependencies)\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="Outpath-Modding, Version=0.0.0.1, Culture=neutral, processorArchitecture=AMD64">
-      <HintPath>..\packages\Outpath-Modding.0.0.0.1-alpha6\lib\net48\Outpath-Modding.dll</HintPath>
+      <HintPath>..\packages\Outpath-Modding.0.0.0.1-alpha7\lib\net48\Outpath-Modding.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -51,6 +51,9 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(Outpath_Dependencies)\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commands\Test.cs" />
